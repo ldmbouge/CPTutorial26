@@ -1,0 +1,81 @@
+:PROPERTIES:
+:ID:       ADF0C378-584F-451C-87F4-C0A0B3C94265
+:END:
+#+title: CP Everywhere for Everyone All at Once
+#+subtitle: From Nothing to Scheduling with M**iCP!
+
+* Abtract
+The purpose of this tutorial is to bring everyone, from neophytes to CP afficionados to a state where they can create CP models using one of the M**iCP tools and easily produce useful results with Open source means for a variety of combinatorial problems culminating with hard scheduling problems. Attendees should bring a laptop with Java SDK (21) and maven (The Apache build tools) to participate in the 2nd hour of code where they will get hands-on experience with the tools and the technology. 
+
+* Presenters
+(Alphabetical)
+
+- Augusting Delecluse
+- Laurent Michel, Synchrony Chair in Cybersecurity, School of Computing, Univeristy of Connecticut, USA.
+- Pierre Schaus
+
+ (Pascal not going to CP.)
+ 
+* Objective (Assumptions)
+- Two 1-hour blocks
+  - 1 hour focused on presentation
+  - 1 hour devoted to exercices (in modeling)
+- Make it modeling centric
+  One hour is not enough to do internals
+- Bring MaxiCP for scheduling/routing?
+
+* Plan
+** First 1 hour block (lecture)
+*** CP in a nutshell
+- Philosophy
+- MiniCP
+  Basics in modeling, Java
+- MaxiCP
+  Scheduling abstraction, sequence vars, higher-level models
+- MiniCPP 
+  Same design, C++, route to GPU, Python API
+*** Modeling with MiniCP
+*** Solving with MiniCP (Search)
+- Heuristics
+- Strategies
+- Meta-heuristics (LNS, Restarts)
+*** Puzzles
+- Purpose
+  Illustrate arithmetic, logical (reified) and global constraints (use different puzzles)
+- Provide
+  Links to MiniCP videos from the site for more examples and looking at internals
+  "CP Internals" 
+*** Scheduling
+- Purpose
+  Step up to richer abstractions to support "industrial grade problems"
+**** Topics covered
+  - Disjunctive
+  - Cumulative
+*** Video to setup the tools
+So that they can be ready for the second 1hr block with exercices
+
+** Second 1 hour block (next day, exercise)
+*** Start with example from lecture (puzzle)
+(10m)
+*** Model a new problem
+(20m)
+- SEND-MORE-MONEY or some such
+*** Start with a scheduling with a naive search and build a better one
+(20m)
+
+* Tools
+** Slide making
+Typst: https://typst.app/
+
+Most useful command:
+#+begin_src bash
+  typst watch <file.typ>
+#+end_src
+It automatically (and incrementally) compiles the typst file being watched when a save
+occurs. If you have a PDF viewer (like Skim) that can also watch the PDF, you get automatic
+instant preview.
+
+*** Starting point
+I'll put a deck template in ~slides.typ~ (within the ~slides~ folder)
+
+
